@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Compound Interest Computer</title>
+    <style>
+      .grid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3em;
+        grid-auto-rows: 100px;
+      }
+      .grid > div {
+        background: #33F1FF;
+        padding: 1em;
+      }
+      .grid > div:nth-child(odd) {
+        background: #00FFA1;
+        padding: 1em;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>COMPOUND INTEREST COMPUTER</h1>
+    <div class="grid">
+      <div>
+        Principal: $<input type="number" id="principal">
+      </div>
+      <div>
+        Interest Rate: <input type="number" id="intRate">%
+      </div>
+      <div>
+        Number of Times Compounded Per Year: <input type="number" id="timesCompounded">
+      </div>
+      <div>
+        Total Number of Years: <input type="number" id="numYears">
+      </div>
+      <div>
+        Compound Interest Earned: $<span id="compInterest"></span>
+      </div>
+      <div>
+        Total Amount Earned: $<span id="totalEarned"></span>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
