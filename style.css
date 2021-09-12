@@ -4,13 +4,13 @@ body {
   padding: 0;
   background: rgb(110, 49, 9) url(https://i.imgur.com/xQxHjAK.gif);
   background-blend-mode: difference;
-  opacity: 0.9;
+  opacity: 0.85;
   transition-property: opacity;
   transition-duration: 0s;
 }
 
 body:hover {
-  opacity: 100;
+  opacity: initial;
 }
 
 h1 {
@@ -23,10 +23,14 @@ h1 {
   font-weight: normal;
   font-size: 350%;
   text-shadow: rgb(20, 20, 20) -5px 4px;
+  transform: skewX(-15deg);
 }
 
-#grid {
-  display: grid;
+.grid {
+  
+}
+
+.footer {
 }
 
 div {
