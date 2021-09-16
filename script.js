@@ -10,7 +10,7 @@ function computeCompInterest() {
   const interest = interestBox.value;
   const numTimesCompounded = numTimesCompoundedBox.value;
   const numYears = numYearsBox.value;
-  const totalAmount = (principal * (Math.pow((1 + ((interest/100)/numTimesCompounded)), (numTimesCompounded * numYears))));
+  const totalAmount = (principal *((1 +((interest/100)/numTimesCompounded))**(numTimesCompounded*numYears)));
   const compInterest = totalAmount - principal;
   compInterestSpan.textContent = compInterest;
   totalAmountSpan.textContent = totalAmount;
